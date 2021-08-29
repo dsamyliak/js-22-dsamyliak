@@ -1,13 +1,13 @@
 
 const priceTop = 100;
 const description = "About product";
-let xyz;
-
-// xyz = prompt('Text', xyz);
+let xyz = 'Text';
 
 console.log("Top price =", priceTop);
 console.log(description);
-console.log("xyz = ", xyz);
+console.log("xyz =",xyz);
+
+
 
 // const shouldRenew = confirm("Do you want to renew subscribing?");
 // console.log(shouldRenew);
@@ -16,3 +16,6 @@ console.log("xyz = ", xyz);
 // quantity = Number(quantity);
 // console.log(quantity);
 // console.log(typeof quantity);
+
+// ------------------------------------------------------------------------
+// 03-numbers
