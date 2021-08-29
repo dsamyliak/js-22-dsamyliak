@@ -116,7 +116,9 @@
 // ------------------------------------------------------------------------
 // 04-strings
 
+
 // 123456789 - string.length = 9
+
 
 const message1 = "123456789"
 console.log(message1.length);
@@ -124,7 +126,9 @@ console.log(message1.length);
 const message = "Hello"
 console.log("Hello consist 5 symbols =", message.length);
 
+
 // concatenation
+
 
 const firstName = "Ivan";
 const lastName = "Deerov";
@@ -146,6 +150,7 @@ console.log(1 + "2"); // "12"
 console.log(1 + "2" + 4); // "124"
 console.log(1 + 2 + "4"); // "34"
 
+
 // Методи toLowerCase() і toUpperCase() і normalized
 
 
@@ -155,21 +160,26 @@ console.log(1 + 2 + "4"); // "34"
 
 // console.log(brand + ' ' + normalizedBrand);
 
-let brand = 'samSuNg';
-console.log(brand[0]);
-console.log(brand[1]);
-console.log(brand[2]);
-console.log(brand[3]);
-console.log(brand[4]);
-console.log(brand[5]);
-console.log(brand[6]);
+// let brand = 'samSuNg';
+// console.log(brand[0]);
+// console.log(brand[1]);
+// console.log(brand[2]);
+// console.log(brand[3]);
+// console.log(brand[4]);
+// console.log(brand[5]);
+// console.log(brand[6]);
 
-console.log("");
-console.log('');
+// console.log("");
+// console.log('');
 
 
-console.log(brand.slice(3).toUpperCase());
-console.log(brand.slice(3).toLowerCase());
+// console.log(brand.slice(3).toUpperCase());
+// console.log(brand.slice(3).toLowerCase());
 
-brand = brand[0].toUpperCase() + brand.slice(1).toLowerCase();
-console.log('samSuNg convert to Samsung:', brand);
+// brand = brand[0].toUpperCase() + brand.slice(1).toLowerCase();
+// console.log('samSuNg convert to Samsung:', brand);
+
+
+// includes();
+
+
