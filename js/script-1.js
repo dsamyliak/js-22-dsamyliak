@@ -120,35 +120,35 @@
 // 123456789 - string.length = 9
 
 
-const message1 = "123456789"
-console.log(message1.length);
+// const message1 = "123456789"
+// console.log(message1.length);
 
-const message = "Hello"
-console.log("Hello consist 5 symbols =", message.length);
-
-
-// concatenation
+// const message = "Hello"
+// console.log("Hello consist 5 symbols =", message.length);
 
 
-const firstName = "Ivan";
-const lastName = "Deerov";
+// // concatenation
 
-const fullName = firstName + ' ' + lastName;
-console.log(fullName);
 
-const room = 716;
-const typeRoom = "VIP";
+// const firstName = "Ivan";
+// const lastName = "Deerov";
 
-const welcomeMsg = 'Гость ' + firstName + ' ' + lastName + ' поселяется в ' + typeRoom + ' номер ' + room + '.';
-console.log(welcomeMsg);
+// const fullName = firstName + ' ' + lastName;
+// console.log(fullName);
 
-// ` ` ${variable}
-console.log(`${firstName} ${lastName} is a american John Deer!`);
+// const room = 716;
+// const typeRoom = "VIP";
 
-// Подивимось на різний порядок операндів.
-console.log(1 + "2"); // "12"
-console.log(1 + "2" + 4); // "124"
-console.log(1 + 2 + "4"); // "34"
+// const welcomeMsg = 'Гость ' + firstName + ' ' + lastName + ' поселяется в ' + typeRoom + ' номер ' + room + '.';
+// console.log(welcomeMsg);
+
+// // ` ` ${variable}
+// console.log(`${firstName} ${lastName} is a american John Deer!`);
+
+// // Подивимось на різний порядок операндів.
+// console.log(1 + "2"); // "12"
+// console.log(1 + "2" + 4); // "124"
+// console.log(1 + 2 + "4"); // "34"
 
 
 // Методи toLowerCase() і toUpperCase() і normalized
@@ -181,5 +181,23 @@ console.log(1 + 2 + "4"); // "34"
 
 
 // includes();
+
+
+// const blackListedWord1 = 'спам';
+// const blackListedWord2 = 'распродажа';
+
+// const string1 = 'Привет, я принц Абдул, это не спам, на 1млн долларс!';
+// const string2 = 'Самая большая РАСПРОДАЖА этой недели, не пропустите...';
+// const string3 = 'Рекламная компания #fatlivemaster';
+
+// console.log(string1.includes(blackListedWord1));
+// console.log(string1.includes(blackListedWord2));
+
+// console.log(string2.includes(blackListedWord1));
+// const normalizedString2 = string2.toLowerCase();
+// console.log(normalizedString2.includes(blackListedWord2));
+
+// console.log(string3.includes(blackListedWord1));
+// console.log(string3.includes(blackListedWord2));
 
 
