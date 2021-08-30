@@ -65,3 +65,6 @@
 // console.log("2".charCodeAt(0)); //unicode of 2 = 50
 // console.log("12".charCodeAt(0)); //unicode of 1 = 49
 // console.log('"2" > "12"', "2" > "12"); // true 50 > 49
+
+//Репозиторий https://github.com/VovaMelnyk/js-group-39
+//mdn - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
