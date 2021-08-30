@@ -201,3 +201,127 @@
 // console.log(string3.includes(blackListedWord2));
 
 
+// 05-comparison-operations
+
+
+// console.log(15 > 15);
+// console.log(15 > 15);
+
+// console.log('15' > 14); //true
+
+// console.log('15' > 16); //false
+
+// const isEqual = 5 == 5; //true
+// console.log(isEqual);
+
+// const isEqual2 = '5' == 5; //true
+// console.log(isEqual2);
+
+// const isEqual3 = 1 == '1'; //true
+// console.log(isEqual3);
+
+// const isEqual4 = 1 === '1'; //false
+// console.log(isEqual4);
+
+
+// 06-logical-operators
+
+// // Boolean 
+
+// console.log(Number(null));
+// console.log(Number(NaN));
+
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(-5));
+
+// And - &&
+// Or - ||
+// Not - !
+
+// 06-1-segment
+
+
+// const x1 = 10;
+// const x2 = 30;
+
+// const number = 20;
+
+// console.log(`Число ${number} попадает в отрезок до ${x1}?`, number < x1);
+// console.log(`ЧИсло ${number} попадает в отрезок после ${x2}?`, number > x2);
+
+// const res = number > x1 && number < x2;
+// console.log(`Число ${number} попадает в отрезок между ${x1} и ${x2}: ${Boolean(res)}`);
+
+
+// 06-2-chat
+
+
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd;
+// console.log('Можно открыть чат? ', canOpenChat);
+
+
+// 06-3-subscription
+
+
+// const sub = 'pro';
+
+// const canAccessContent = sub === 'pro' || sub === 'vip';
+// // true || false => true
+// // false || true => true
+// // false || false => false
+
+// console.log('Есть доступ к контенту? ', canAccessContent);
+
+
+// 07-branching
+
+
+//Тернарный оператор
+
+
+// const balance = 100;
+// // let message;
+
+// // if (balance >= 0) {
+// //   message = 'Позитивный баланс';
+// //  } else {
+// //   message = 'Негативный баланс';
+// // }
+
+// const message = balance >= 0 ? 'Позитивный баланс' : 'Негативный баланс';
+
+// console.log(message + ':', balance);
+// // console.log(message);
+
+
+// Оператор ветвления else...if
+
+
+// const salary = 5000;
+
+// if (salary <= 500) {
+//   console.log('Уровень 1');
+// } else if (salary > 500 && salary <= 1500) {
+//   console.log('Уровень 2');
+// } else if (salary > 1500 && salary < 3000) {
+//   console.log('Уровень 3');
+// } else {
+//   console.log('Уровень 4');
+// }
+
+
+//Тернарный оператор
+
+
+// const salary = 50000;
+// let money;
+
+// money = salary >= 50000 ? 'Good money' : 'Bad money';
+
+// console.log(salary +'$ ' + money);
+
