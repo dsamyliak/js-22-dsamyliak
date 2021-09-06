@@ -150,4 +150,79 @@
 // console.log('Total Price = ', TotalPrice);
 
 // ------------------------------------------------------------------------
-// HW - Module 2 - Task 21 - 
+// HW - Module 2 - Task 21 - поиск самого длинного слова
+
+// let string = "The quick brown fox jumped over the lazy dog";
+// console.log(string);
+// let newArray = string.split(" ");
+// console.log(newArray);
+// let maxWord;
+// let maxSymbols = 0;
+
+
+// for (let i = 0; i < newArray.length; i += 1) {
+  
+  
+//   let wordLength = newArray[i];
+//   console.log(wordLength);
+  
+//   let symbolQuantity = wordLength.length;
+//     console.log("symbolQuantity = ", symbolQuantity);
+  
+
+//   if (symbolQuantity >= maxSymbols) {
+//     maxSymbols = symbolQuantity;
+//     console.log("maxSymbolWord = ", maxSymbols);
+//     maxWord = wordLength;
+//   }
+  
+// }
+// console.log("maxWord =", maxWord);
+
+// //////////////////////////////////////////
+// // function findLongestWord(string):
+
+// function findLongestWord(string) {
+//   // Change code below this line
+// let newArray = string.split(" ");
+//   let maxWord;
+//   let maxSymbols = 0;
+  
+//   for (let i = 0; i < newArray.length; i += 1) {
+    
+//   let wordLength = newArray[i];
+//   let symbolQuantity = wordLength.length;
+   
+//   if (symbolQuantity >= maxSymbols) {
+//     maxSymbols = symbolQuantity;
+//     maxWord = wordLength;
+//   }
+  
+// }
+  
+// return maxWord;
+
+//   // Change code above this line
+// }
+
+// //////////////////////////////////////////
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 22 - Метод push()
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+for (let i = min; i <= max; i += 1) {
+  numbers.push(i);
+}
+  // Change code above this line
+  return numbers;
+}
+
+let result = createArrayOfNumbers(14, 17);
+console.log("Result =", result);
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 23 - фильтрация массива чисел
+
