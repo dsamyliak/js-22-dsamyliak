@@ -210,18 +210,18 @@
 // ------------------------------------------------------------------------
 // HW - Module 2 - Task 22 - Метод push()
 
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
-  // Change code below this line
-for (let i = min; i <= max; i += 1) {
-  numbers.push(i);
-}
-  // Change code above this line
-  return numbers;
-}
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+// for (let i = min; i <= max; i += 1) {
+//   numbers.push(i);
+// }
+//   // Change code above this line
+//   return numbers;
+// }
 
-let result = createArrayOfNumbers(14, 17);
-console.log("Result =", result);
+// let result = createArrayOfNumbers(14, 17);
+// console.log("Result =", result);
 
 // ------------------------------------------------------------------------
 // HW - Module 2 - Task 23 - фильтрация массива чисел
