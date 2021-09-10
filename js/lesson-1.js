@@ -68,3 +68,18 @@
 
 //Репозиторий https://github.com/VovaMelnyk/js-group-39
 //mdn - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
+
+//   <p class="github__VovaMelnyk">
+//       <a
+//         href="https://github.com/VovaMelnyk/js-group-39"
+//         alt="github of VovaMelnyk"
+//         >Репозиторий https://github.com/VovaMelnyk/js-group-39</a
+//       >
+//       <a
+//         href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator"
+//         alt="mdn mozzila operator ??"
+//         >mdn -
+//         https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator</a
+//       >
+//     </p>
+  
