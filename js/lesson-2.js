@@ -269,3 +269,219 @@
 // ------------------------------------------------------------------------
 // HW - Module 2 - Task 25 - Задача: общие элементы
 
+// const array1 = [1, 2, 3];
+// const array2 = [2, 1, 17, 19];
+// console.log(array1, array2);
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let commonArray = [];
+
+//   for (let i = 0; i < array1.length; i++) {
+    
+//   if (array2.includes(array1[i])) {
+//     commonArray.push(array1[i]);
+//   };
+//   // console.log(commonArray);
+// }
+
+//   return commonArray;
+//  // Change code above this line
+// }
+
+// console.log("Common Elements of [1, 2, 3], [2, 4]: ", getCommonElements([1, 2, 3], [2, 4]));
+
+// console.log("Common Elements of [1, 2, 3], [2, 1, 17, 19]: ", getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+// console.log("Common Elements of [24, 12, 27, 3], [12, 8, 3, 36, 27]: ", getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 26 - Цикл for...of
+
+// const order = [12, 85, 37, 4];
+
+// // function calculateTotalPrice(order) {
+// //   let total = 0;
+// //   // Change code below this line
+
+// //   for (let i = 0; i < order.length; i += 1) {
+// //     total += order[i];
+// //   }
+
+// //   // Change code above this line
+// //   return total;
+// // }
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const orderELement of order) {
+//     total += orderELement;
+//     console.log(orderELement);
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// console.log("Total: ", calculateTotalPrice(order));
+
+// console.log("Total: ", calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 27 - Зачада: фильтрация массива чисел 2.0
+
+// const numbers = [1, 2, 3, 4, 5];
+// const value = 3;
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     const number = numbers[i];
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+    
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// console.log("Filtered Array", filterArray(numbers, value));
+
+// console.log("Filtered Array", filterArray([12, 24, 8, 41, 76], 20));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 28 - Оператор %
+
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// console.log("a:", a, "b:", b, "c:", c, "d:", d, "e:", e);
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 29 - Задача: чётные числа
+
+// const start = 2;
+// const end = 5;
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//   const evenNumbersArray = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       evenNumbersArray.push(i);
+//     }
+// }
+
+// return evenNumbersArray;
+//     // Change code above this line
+//   }
+
+// console.log("Even numbers array:", getEvenNumbers(start, end));
+
+// console.log("Even numbers array:", getEvenNumbers(3, 11));
+
+// console.log("Even numbers array:", getEvenNumbers(6, 12));
+
+// console.log("Even numbers array:", getEvenNumbers(0, 10));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 30 - Оператор break
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// console.log('Number:', number);
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 31 - Оператор break vs return в функции
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       break;
+//     }
+//   }
+
+//   return number;
+//   // Change code above this line
+// }
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+  
+
+//   for (let i = start; i < end; i += 1) {
+//     console.log(i);
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+
+  
+//   // Change code above this line
+// }
+
+// console.log("1st number that / without remainder(from (2 to 6) / 5):", findNumber(2, 6, 5));
+
+// console.log("1st number that / without remainder(from (8 to 17) / 3):", findNumber(8, 17, 3));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 32 - Задача: функция includes()
+
+function includes(array, value) {
+  // Change code below this line
+  for (const arrayElement of array) {
+    console.log(arrayElement);
+  if (arrayElement === value) {
+    return true;
+  }
+    
+  }
+  return false;
+  // Change code above this line
+}
+
+console.log("Includes value 6 in [1, 2, 3, 4, 5] true/false:", includes([1, 2, 3, 4, 5], 6));
+
