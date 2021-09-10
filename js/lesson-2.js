@@ -470,18 +470,19 @@
 // ------------------------------------------------------------------------
 // HW - Module 2 - Task 32 - Задача: функция includes()
 
-function includes(array, value) {
-  // Change code below this line
-  for (const arrayElement of array) {
-    console.log(arrayElement);
-  if (arrayElement === value) {
-    return true;
-  }
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const arrayElement of array) {
+//     console.log(arrayElement);
+//   if (arrayElement === value) {
+//     return true;
+//   }
     
-  }
-  return false;
-  // Change code above this line
-}
+//   }
+//   return false;
+//   // Change code above this line
+// }
 
-console.log("Includes value 6 in [1, 2, 3, 4, 5] true/false:", includes([1, 2, 3, 4, 5], 6));
+// console.log("Includes value 6 in [1, 2, 3, 4, 5] true/false:", includes([1, 2, 3, 4, 5], 6));
 
+// console.log("Includes value Uranus in [Earth, Mars, Venus, Jupiter, Saturn] true/false:", includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
