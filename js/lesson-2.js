@@ -226,3 +226,46 @@
 // ------------------------------------------------------------------------
 // HW - Module 2 - Task 23 - фильтрация массива чисел
 
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const resultArray = [];
+//   console.log("Numbers: ", numbers, "Value: ", value);
+  
+//   for (const someNumbers of numbers) {
+//     // console.log("someNumbers: ", someNumbers);
+//     if (someNumbers > value) {
+//       resultArray.push(someNumbers);
+
+//       // console.log("stepSomeArray: ", resultArray);
+//     }
+//   }
+  
+//  return resultArray;
+//   // Change code above this line
+// }
+
+// console.log("numbers > value = resultArray:", filterArray([1, 2, 3, 4, 5], 3));
+// console.log("numbers > value = resultArray:", filterArray([12, 24, 8, 41, 76], 38));
+// console.log("numbers > value = resultArray:", filterArray([1, 2, 3, 4, 5], 5));
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 24 - Метод includes()
+
+// const fruit = "plum";
+// const fruits = ["apple", "plum", "pear", "orange"];
+// console.log(fruits);
+// console.log(`consist of ${fruit}:`, fruits.includes(fruit));
+
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// console.log(`consist of apple:`, checkFruit("apple"));
+// console.log(`consist of ():`, checkFruit());
+
+// ------------------------------------------------------------------------
+// HW - Module 2 - Task 25 - Задача: общие элементы
+
