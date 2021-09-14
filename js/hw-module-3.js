@@ -300,3 +300,81 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 10 - Цикл for...in
 
+// ------------------------------------------------------------------------
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   console.log(key);
+//   // Значение свойства с таким ключом
+//   console.log(book[key]);
+// }
+// ------------------------------------------------------------------------
+
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//     if (apartment.hasOwnProperty(key)) {
+//         values.push(apartment[key]);
+//         keys.push(key);
+//     }
+//     console.log("Every step of keys:", keys);
+//     console.log("Every step of values:", values);
+//     console.log("");
+// }
+// console.log("");
+// console.log("Final array of keys:", keys);
+// console.log("Final array of values:", values);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 11 - Метод hasOwnProperty()
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// console.log(apartment);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+//     if (apartment.hasOwnProperty(key)) {
+//         keys.push(key);
+//         values.push(apartment[key]);
+//     }
+//   // Change code above this line
+// }
+// console.log(keys);
+// console.log(values);
+// console.log("");
+// console.log(apartment);
+// console.log(apartment.service);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 12 - Задача. Подсчёт свойств
+
+function countProps(object) {
+  let propCount = 0;
+  // Change code below this line
+
+  // Change code above this line
+  return propCount;
+}
+
+
