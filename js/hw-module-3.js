@@ -476,26 +476,29 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 18 - Задача. Поиск объекта по значению свойства
 
-// const products = [
-//   { name: "Radar", price: 1300, quantity: 4 },
-//   { name: "Scanner", price: 2700, quantity: 3 },
-//   { name: "Droid", price: 400, quantity: 7 },
-//   { name: "Grip", price: 1200, quantity: 9 },
-// ];
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
 
-// function getProductPrice(productName) {
-//   // Change code below this line
-// for (const productItem of products) {
-//   console.log(productItem);
-//   console.log(productItem.price);
-//   if (productItem.name === productName) {
-//     return productItem.price;
-//   }
+function getProductPrice(productName) {
+  // Change code below this line
+for (const productItem of products) {
+  // console.log(productItem);
+  console.log(productItem.price);
+  if (productItem.name === productName) {
+    return productItem.price;
+  }
   
-// }
+}
 
-//   return null;
-//   // Change code above this line
-// }
+  return null;
+  // Change code above this line
+}
 
-// console.log(`Product price is:`, getProductPrice("Droid"));
+console.log(`Product price is:`, getProductPrice("Radar"));
+console.log(`Product price is:`, getProductPrice("Scanner"));
+console.log(`Product price is:`, getProductPrice("Droid"));
+console.log(`Product price is:`, getProductPrice("Grip"));
