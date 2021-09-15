@@ -402,17 +402,100 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 14 - Задача. Подсчёт свойств 2.0
 
-function countProps(object) {
-  // Change code below this line
-  let propCount = 0;
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
 
-  for (const key of object) {
-    
-  }
+//   propCount = Object.keys(object).length;
 
-  return propCount;
-  // Change code above this line
-}
+//   return propCount;
+//   // Change code above this line
+// }
 
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({}));
 
+// ------------------------------------------------------------------------
+// HW-3 - Task 15 - Метод Object.values()
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// console.log("Keys:", keys);
+// console.log("values:", values);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 16 - Задача. Расходы на зарплату
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   let salary = Object.values(salaries);
+//   console.log(salary);
+//   console.log("quantity of salary's items:", salary.length);
+//   for (let i = 0; i < salary.length; i++) {
+//     totalSalary += salary[i];
+//   }
+
+//   // Change code above this line
+//   return totalSalary;
+// }
+
+// console.log(countTotalSalary({}));
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 17 - Массив объектов
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const colorItem of colors) {
+//   hexColors.push(colorItem.hex);
+//   rgbColors.push(colorItem.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 18 - Задача. Поиск объекта по значению свойства
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+// for (const productItem of products) {
+//   console.log(productItem);
+//   console.log(productItem.price);
+//   if (productItem.name === productName) {
+//     return productItem.price;
+//   }
+  
+// }
+
+//   return null;
+//   // Change code above this line
+// }
+
+// console.log(`Product price is:`, getProductPrice("Droid"));
