@@ -369,12 +369,50 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 12 - Задача. Подсчёт свойств
 
-function countProps(object) {
-  let propCount = 0;
-  // Change code below this line
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//     propCount = Object.keys(object).length;
+//       // Change code above this line
+//   return propCount;
+// }
 
-  // Change code above this line
+// console.log("quantityProps =", countProps({ name: "Mango", age: 2 }));
+// console.log("quantityProps =", countProps({}));
+// console.log("quantityProps =", countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 13 - Метод Object.keys()
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+//     values.push(apartment[key]);
+//     console.log(`value of ${key.toLocaleUpperCase()} in for:`, values); 
+// }
+// console.log(keys);
+// console.log(values);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 14 - Задача. Подсчёт свойств 2.0
+
+function countProps(object) {
+  // Change code below this line
+  let propCount = 0;
+
+  for (const key of object) {
+    
+  }
+
   return propCount;
+  // Change code above this line
 }
 
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
