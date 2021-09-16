@@ -476,29 +476,94 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 18 - Задача. Поиск объекта по значению свойства
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function getProductPrice(productName) {
-  // Change code below this line
-for (const productItem of products) {
-  // console.log(productItem);
-  console.log(productItem.price);
-  if (productItem.name === productName) {
-    return productItem.price;
-  }
+// function getProductPrice(productName) {
+//   // Change code below this line
+// for (const productItem of products) {
+//   // console.log(productItem);
+//   console.log(productItem.price);
+//   if (productItem.name === productName) {
+//     return productItem.price;
+//   }
+// }
+//   return null;
+//   // Change code above this line
+// }
+
+// console.log(`Product price is:`, getProductPrice("Radar"));
+// console.log(`Product price is:`, getProductPrice("Scanner"));
+// console.log(`Product price is:`, getProductPrice("Droid"));
+// console.log(`Product price is:`, getProductPrice("Grip"));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 19 - Задача. Коллекция значений свойства
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   let argArray = [];
+
+//   for (const product of products) {
+//   console.log(product);
+//   if (product.hasOwnProperty(propName)) {
+//     argArray.push(product[propName]);
+//   }
+    
+// }
+//   return argArray;
+//   // Change code above this line
+// }
+
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("uan"));
+// console.log(getAllPropValues("name"));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 20 - Задача. Общая стоимость товара
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   let TotalPrice = 0;
   
-}
+//   for (const product of products) {
+//     console.log(product);
+    
+//     if (product.name === productName) {
+//       let TotalPrice = product.price * product.quantity;
+//       // console.log(TotalPrice);
+//       return TotalPrice;
+//     }
+    
+//   }
+//   return TotalPrice;
+//   // Пиши код выше этой строки
+// }
 
-  return null;
-  // Change code above this line
-}
+// // console.log(calculateTotalPrice("Blaster"));
 
-console.log(`Product price is:`, getProductPrice("Radar"));
-console.log(`Product price is:`, getProductPrice("Scanner"));
-console.log(`Product price is:`, getProductPrice("Droid"));
-console.log(`Product price is:`, getProductPrice("Grip"));
+// console.log(`Total price of Blaster =`, calculateTotalPrice("Blaster"));
+// console.log(`Total price of Grip =`, calculateTotalPrice("Grip"));
+// console.log(`Total price of Droid =`, calculateTotalPrice("Droid"));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 21 - Деструктуризация объектов
+
