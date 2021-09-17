@@ -567,3 +567,95 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 21 - Деструктуризация объектов
 
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+
+// // Destructure of highTemperatures
+// const {yesterday, today, tomorrow,} = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// console.log("All temperatures: ", highTemperatures);
+// console.log("Mean temperature =", meanTemperature);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 22 - Значения по умолчанию
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+// // const icon = highTemperatures.icon;
+
+// const { yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", } = highTemperatures;
+
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// console.log(highTemperatures);
+// console.log(meanTemperature);
+
+// console.log("today = ", today);
+// console.log("Icon isn't in highTemperatures:", icon);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 23 - Изменение имени переменной
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const {yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", } = highTemperatures;
+
+// // const highYesterday = highTemperatures.yesterday;
+// // const highToday = highTemperatures.today;
+// // const highTomorrow = highTemperatures.tomorrow;
+// // const highIcon = highTemperatures.icon;
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// console.log(highYesterday);
+// console.log(highToday);
+// console.log(highTomorrow);
+// console.log(`This is new key - icon in highTemperatures object ${highIcon}`);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 24 - Деструктуризация в циклах
+
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+
+for (const color of colors) {
+  hexColors.push(color.hex);
+  rgbColors.push(color.rgb);
+}
+
+
