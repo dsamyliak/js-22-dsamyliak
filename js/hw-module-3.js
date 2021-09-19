@@ -670,3 +670,241 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 25 - Глубокая деструктуризация
 
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// Change code below this line
+
+// destructure
+// const { today: { high: highToday, low: lowToday,
+//     icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg", },
+//     tomorrow: { high: highTomorrow, low: lowTomorrow,
+//     icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", }
+// } = forecast;
+
+// console.log("todayIcon =", todayIcon);
+// console.log("tomorrowIcon =", tomorrowIcon);
+// console.log(forecast);
+
+// normal
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 26 - Паттерн «Объект настроек»
+
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+//     const { today: { low: todayLow, high: todayHigh, },
+//         tomorrow: { low: tomorrowLow, high: tomorrowHigh, } } = forecast;
+// //   const todayLow = forecast.today.low;
+// //   const todayHigh = forecast.today.high;
+// //   const tomorrowLow = forecast.tomorrow.low;
+// //   const tomorrowHigh = forecast.tomorrow.high;
+    
+    
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 27 - Операция spread при передаче аргументов
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log("Best Score =", bestScore);
+// console.log("Worst Score", worstScore);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 28 - Операция spread при создании нового массива
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// console.log("All Scores =", allScores);
+// console.log("Best Score =", bestScore);
+// console.log("Worst Score =", worstScore);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 29 - Операция spread при создании нового объекта
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log('Default Settings: ', defaultSettings);
+// console.log('New settings to override old: ', overrideSettings);
+// console.log("Final Settings =", finalSettings);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 30 - Задача. Карточки задач
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//     const dataNew = { category, priority, completed, ...data };
+//     return dataNew;
+//   // Change code above this line
+// }
+
+// console.log(makeTask({}));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ text: "Buy bread" }));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 31 - Операция rest для сбора всех аргументов функции
+
+// // Change code below this line
+// function add(...args) {
+    
+//     let totalSum = 0;
+//     for (const item of args) {
+//        totalSum += item;
+//         console.log(item);
+//     }
+//     return totalSum;
+//   // Change code above this line
+// }
+
+// console.log("Total sum of these numbers 12, 4, 11, 48 =", add(12, 4, 11, 48));
+// console.log("Total sum of these numbers 74, 11, 62, 46, 12, 36 =", add(74, 11, 62, 46, 12, 36));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 32 - Операция rest для сбора части аргументов функции
+
+// // Change code below this line
+// function addOverNum(firstArg, ...args) {
+//   let total = 0;
+    
+//     console.log("First Arg:", firstArg);
+
+//     for (const arg of args) {
+
+//         console.log('arg in "for"', arg);
+
+//     if (arg > firstArg) {
+//         total += arg;
+//     }  
+//   }
+//   return total;
+//   // Change code above this line
+// }
+
+// console.log(`Sum of numbers over first element:`, addOverNum(50, 15, 27));
+
+// console.log(`Sum of numbers over first element:`, addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 33 - Задача. Массив совпадений
+
+// // Change code below this line
+// function findMatches(arrayFirst, ...args) {
+//   const matches = []; // Don't change this line
+
+//     console.log(arrayFirst, args);
+//     for (const argsElement of args) {
+//         for (const element of arrayFirst) {
+//         // console.log("arrayFirst element:", element);
+//            if (argsElement === element) {
+//                matches.push(argsElement);
+//             }     
+//         }      
+//     }
+//   // Change code above this line
+//   return matches;
+// }
+
+// console.log("array matches:", findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log("array matches:", findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 34 - Методы объекта
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) {
+//         return `Deleting book ${bookName}`;
+//     },
+//     updateBook(oldName, newName) {
+//         return `Updating book ${oldName} to ${newName}`;
+//     }
+//   // Change code above this line
+// };
+
+// console.log('Get books from array "books" -', bookShelf.getBooks());
+// console.log('bookShelf:', bookShelf);
+// console.log('books of bookShelf:', bookShelf.books);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 35 - Доступ к свойствам объекта в его методах
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     // big version
+//     //   const oldNameIndex = this.books.indexOf(oldName);
+//     //   console.log(oldNameIndex);
+//     //   const changeName = this.books.splice(oldNameIndex, 1, newName);
+//     //   console.log(changeName);
+//     //   return this.books;
+      
+//       // small version
+//       const oldNameIndex = this.books.indexOf(oldName);
+//       this.books.splice(oldNameIndex, 1, newName);
+
+//       return this.books;
+//     // Change code above this line
+//   },
+// };
+
+// console.log(bookShelf);
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 36 - Задача. Лавка зелий «У старой жабы»
+
