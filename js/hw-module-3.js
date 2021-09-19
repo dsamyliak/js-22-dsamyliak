@@ -908,3 +908,157 @@
 // ------------------------------------------------------------------------
 // HW-3 - Task 36 - Задача. Лавка зелий «У старой жабы»
 
+// const atTheOldToad = {
+//   // Change code below this line
+// potions: [],
+//     //my practice
+// // potions: [1, 2, 3, "Text1", "Book2", "String3"],
+
+//   // Change code above this line
+// };
+// console.log("potions of atTheOldToad:", atTheOldToad.potions);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 37 - Задача. Получаем все зелья
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//     getPotions() {
+//         return this.potions;
+// },
+
+//   // Change code above this line
+// };
+
+// console.log(atTheOldToad.getPotions());
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 38 - Задача: добавляем новое зелье
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//       this.potions.push(potionName);
+
+
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.addPotion("Invisibility");
+// atTheOldToad.addPotion("Power potion")
+// console.log(atTheOldToad.potions);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 39 - Задача. Удаляем зелье
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+
+//       const indexRemoveItem = this.potions.indexOf(potionName);
+//       this.potions.splice(indexRemoveItem, 1);
+
+//       return this.potions;
+
+//     // Change code above this line
+//   },
+// };
+// console.log(atTheOldToad.potions);
+// console.log('Remove first potion "Dragon breath":', atTheOldToad.removePotion("Dragon breath"));
+// console.log(atTheOldToad.potions);
+// console.log('Remove second potion "Speed potion":', atTheOldToad.removePotion("Speed potion"));
+// console.log(atTheOldToad.potions);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 40 - Задача: обновляем зелье
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+
+//       this.potions.splice(this.potions.indexOf(oldName), 1, newName);
+
+//       return this.potions;
+
+//     // Change code above this line
+//   },
+// };
+
+// console.log(atTheOldToad.potions);
+// console.log('Update potion name "Dragon breath" to "Polymorth"', atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+// console.log(atTheOldToad.potions);
+
+// ------------------------------------------------------------------------
+// HW-3 - Task 41 - Задача: расширяем инвентарь
+
+// const atTheOldToad = {
+//     potions: [
+//         { name: "Speed potion", price: 460 },
+//         { name: "Dragon breath", price: 780 },
+//         { name: "Stone skin", price: 520 },
+//     ],
+//     // Change code below this line
+//     getPotions() {
+//         return this.potions;
+//     },
+//     addPotion(newPotion) {
+//         for (const item of this.potions) {
+//             if (item.name === newPotion.name) {
+//                 console.log("item", item);
+//                 console.log("newPotion", newPotion);
+//                 return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//             }
+//         }
+//         this.potions.push(newPotion);
+//     },
+//     removePotion(potionName) {
+    
+//         for (const item of this.potions) {
+//             console.log("item", item);
+//             if (item.name === potionName) {
+//                 console.log(item.name);
+//                 const potionIndex = this.potions.indexOf(item);
+//                 console.log(potionIndex);
+//                 this.potions.splice(potionIndex, 1);
+//                 return this.potions;
+//             }
+//         }
+//         return `Potion ${potionName} is not in inventory!`;
+//     },
+//     updatePotionName(oldName, newName) {
+//         for (const item of this.potions) {
+//             if (item.name === oldName) {
+//                 console.log(item);
+//                 console.log("item name:", item.name);
+//                 console.log("new name:", newName);
+//                 item.name = newName;
+                
+//                 return this.potions;
+                
+//             }
+//         }
+//         return `Potion ${oldName} is not in inventory!`;
+//         // Change code above this line
+//     },
+// }
+
+// console.log(atTheOldToad);
+// console.log(atTheOldToad.getPotions());
+// // console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// // atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+// // console.log(atTheOldToad.addPotion({ name: "Speed potion", price: 460 }));
+
+// // console.log(atTheOldToad.removePotion("Dragon breath"));
+// // console.log(atTheOldToad.removePotion('"Dragon"'));
+
+// // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+// // console.log(atTheOldToad.updatePotionName("Speed potion", "Polymorth"));
+// // console.log(atTheOldToad.updatePotionName("XXX", "Polymorth"));
+
+
+
