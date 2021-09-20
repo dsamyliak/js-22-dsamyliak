@@ -48,4 +48,4 @@ console.log(filter(fruits, getFruitsWithFreshParam));
 
 // ------------------------------------------------------------------------
 
-console.timeEnd('timer1');
+console.timeEnd('timer1', console.log("End of timer1(Стоп консоль таймера)"));
