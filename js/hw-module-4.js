@@ -2,50 +2,492 @@
 // CW-4
 
 //filter of "Start of timer1(rray
-console.time('timer1', console.log("Start of timer1(Старт консоль таймера)"));
+// console.time('timer1', console.log("Start of timer1(Старт консоль таймера)"));
 
 
-const filter = function (array, test) {
-    const filteredArray = [];
+// const filter = function (array, test) {
+//     const filteredArray = [];
 
-    for (const element of array) {
-        console.log(element);
-        const passed = test(element);
+//     for (const element of array) {
+//         console.log(element);
+//         const passed = test(element);
 
-        if (passed) {
-            filteredArray.push(element);
-        }
-        console.log(passed);
-    }
-    return filteredArray;
-}
+//         if (passed) {
+//             filteredArray.push(element);
+//         }
+//         console.log(passed);
+//     }
+//     return filteredArray;
+// }
 
-const callback1 = function (value) {
-    return value >= 4;
-}
+// const callback1 = function (value) {
+//     return value >= 4;
+// }
 
-const callback2 = function (value) {
-    return value === 5;
-}
+// const callback2 = function (value) {
+//     return value === 5;
+// }
 
-console.log("filter with callback1 value >= 4:", filter([1, 2, 3, 4, 5, 6, 7, 8, 9], callback1));
+// console.log("filter with callback1 value >= 4:", filter([1, 2, 3, 4, 5, 6, 7, 8, 9], callback1));
 
-console.log("filter with callback1 value = 5:", filter([1, 2, 3, 4, 5, 6, 7, 8, 9], callback2));
+// console.log("filter with callback1 value = 5:", filter([1, 2, 3, 4, 5, 6, 7, 8, 9], callback2));
+
+// // ------------------------------------------------------------------------
+
+// const fruits = [
+//     {name: 'apples', quantity: '200', isFresh: 'true',},
+//     {name: 'grapes', quantity: '300', isFresh: 'false',},
+//     {name: 'oranges', quantity: '150', isFresh: 'true',},
+// ];
+
+// const getFruitsWithFreshParam = function (someFruit) {
+//     return someFruit.isFresh === 'true';
+// }
+
+// console.log(filter(fruits, getFruitsWithFreshParam));
+
+// // ------------------------------------------------------------------------
+
+// console.timeEnd('timer1', console.log("End of timer1(Стоп консоль таймера)"));
+
+
+// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------
+// HW-4 - Task 1 - Функция как значение
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// const pointer = makePizza;
+
+// console.log("result - Result of function makePizza(): ", result);
+// console.log("pointer - Link to function makePizza: ", pointer);
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 2 - Колбэк-функции
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+// }
+
+// console.log(makeMessage("Margarita", makePizza));
+// console.log(makeMessage("Margarita", deliverPizza));
+// console.log(makeMessage("4Cheese", makePizza));
+// console.log(makeMessage("4Cheese", deliverPizza));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 3 - Инлайн-колбэки
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName){console.log(`Eating pizza ${pizzaName}`)});
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 4 - Несколько колбэков
+
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//     order(pizzaName, onSuccess, onError) {
+        
+//         let isPizzaTrue = this.pizzas.includes(pizzaName);
+//         // console.log(pizzaName);
+//         // console.log(isPizzaTrue);
+//             if (!isPizzaTrue) {
+//                return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//             }
+//                return onSuccess(pizzaName);
+//     },
+    
+// };
+// // Change code above this line
+// console.log(pizzaPalace);
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order('Smoked', makePizza, onOrderError);
+// pizzaPalace.order('Four meats', makePizza, onOrderError);
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// // ------------------------------------------------------------------------
+// // alert(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// // alert(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+// console.log(pizzaPalace.order('Ultracheese', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Four meats', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+// // ------------------------------------------------------------------------
+// // const isRecipientAvailable = Math.random() > 0.5;
+// // console.log(!isRecipientAvailable);
+// // ------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 5 - Метод forEach(callback)
+
+// const orderedItems = [7, 7, 7];
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   for (let i = 0; i < orderedItems.length; i += 1) {
+//     totalPrice += orderedItems[i];
+//   }
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice(orderedItems));
+
+//-----------
+// refactoring
+
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+
+//     orderedItems.forEach(function (element, index) {
+   
+//         console.log(`${index}: ${element}`);
+//         totalPrice += element;
+    
+//     });
+
+//     return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// const orderedItems = [7, 7, 7];
+// console.log(calculateTotalPrice(orderedItems));
 
 // ------------------------------------------------------------------------
 
-const fruits = [
-    {name: 'apples', quantity: '200', isFresh: 'true',},
-    {name: 'grapes', quantity: '300', isFresh: 'false',},
-    {name: 'oranges', quantity: '150', isFresh: 'true',},
-];
+// const numbers = [5, 10, 15, 20, 25];
 
-const getFruitsWithFreshParam = function (someFruit) {
-    return someFruit.isFresh === 'true';
-}
+// // Классический for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+// }
 
-console.log(filter(fruits, getFruitsWithFreshParam));
+// // Перебирающий forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+// });
 
 // ------------------------------------------------------------------------
 
-console.timeEnd('timer1', console.log("End of timer1(Стоп консоль таймера)"));
+// ------------------------------------------------------------------------
+// HW-5 - Task 6 - Задача. Фильтрация массива чисел
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       filteredNumbers.push(numbers[i]);
+//     }
+//   }
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([2, 3, 4, 5, 6, 7], 1));
+
+//-----------
+// refactoring
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//     numbers.forEach(function(number) {
+//         if (number > value) {
+//             filteredNumbers.push(number);
+//         }
+            
+//     });
+  
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+// const emptyArray = filterArray([1, 2, 3, 4, 5], 5);
+// console.log(emptyArray);
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 7 - Задача. Общие элементы
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   for (let i = 0; i < firstArray.length; i += 1) {
+//     if (secondArray.includes(firstArray[i])) {
+//       commonElements.push(firstArray[i]);
+//     }
+//   }
+
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// let firstArray = [1, 2, 3], secondArray = [2, 4];
+// let compareArrays = getCommonElements(firstArray, secondArray);
+// console.log(compareArrays);
+
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+
+//-----------
+// refactoring
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   firstArray.forEach(function(element) {
+//     //   console.log(element);
+          
+//         //   console.log(element2);
+      
+//           if (secondArray.includes(element)) {
+//               console.log('ok:', element);
+//               commonElements.push(element);
+          
+//           }
+      
+//       });
+    
+  
+// return commonElements;
+  
+//   // Change code above this line
+// }
+
+// let firstArray = [1, 2, 3], secondArray = [2, 4];
+// let compareArrays = getCommonElements(firstArray, secondArray);
+// console.log(compareArrays);
+
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([11, 13, 11, 5, 12, 15, 5, 15, 16], [24, 11, 17, 19, 22, 6, 16, 23, 16]));
+// // будет [11,11,16]
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 8 - Стрелочные функции.
+
+// Change code below this line
+
+// function calculateTotalPrice(quantity, pricePerItem) {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+// console.log(calculateTotalPrice(4, 400));
+
+//-----------
+// refactoring
+
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+// console.log(calculateTotalPrice(4, 400));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 9 - Неявный возврат
+
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   return quantity * pricePerItem;
+// };
+// // Change code above this line
+
+// console.log(calculateTotalPrice(4, 400));
+
+//-----------
+// refactoring
+
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// // Change code above this line
+
+// console.log(calculateTotalPrice(4, 400));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 10 - Стрелочные функции как коллбеки
+
+// // Change code below this line
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(function (item) {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+// // Change code above this line
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+//-----------
+// refactoring
+
+// Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item) => totalPrice += item);
+
+//   return totalPrice;
+// }
+// // Change code above this line
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 11 - Задача. Фильтрация массива чисел 2.0
+
+// Change code below this line
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+//-----------
+// refactoring
+
+// // Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {  if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 12 - Задача. Общие элементы 2.0
+
+// // Change code below this line
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+
+//   firstArray.forEach(function (element) {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+
+//-----------
+// refactoring
+
+// Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([1, 1, 2, 3], [1, 1, 1, 10, 20, 30]));
+// console.log(getCommonElements([1, 1, 1, 10, 20, 30], [1, 1, 2, 3]));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 13 - Чистые функции
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+
+//-----------
+// refactoring
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//     const newNumbersArray = [];
+//     for (let i = 0; i < numbers.length; i += 1) {
+//         newNumbersArray[i] = numbers[i];
+//     if (numbers[i] % 2 === 0) {
+//       newNumbersArray[i] = numbers[i] + value;
+//         }
+        
+//     }
+//     return newNumbersArray;
+//   // Change code above this line
+    
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+
+// ------------------------------------------------------------------------
+// HW-5 - Task 14 - Метод map()
+
