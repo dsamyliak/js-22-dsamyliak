@@ -153,7 +153,7 @@
 // // ------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 5 - Метод forEach(callback)
+// HW-4 - Task 5 - Метод forEach(callback)
 
 // const orderedItems = [7, 7, 7];
 // function calculateTotalPrice(orderedItems) {
@@ -207,7 +207,7 @@
 // ------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 6 - Задача. Фильтрация массива чисел
+// HW-4 - Task 6 - Задача. Фильтрация массива чисел
 
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
@@ -248,7 +248,7 @@
 // console.log(emptyArray);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 7 - Задача. Общие элементы
+// HW-4 - Task 7 - Задача. Общие элементы
 
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
@@ -305,7 +305,7 @@
 // // будет [11,11,16]
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 8 - Стрелочные функции.
+// HW-4 - Task 8 - Стрелочные функции.
 
 // Change code below this line
 
@@ -325,7 +325,7 @@
 // console.log(calculateTotalPrice(4, 400));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 9 - Неявный возврат
+// HW-4 - Task 9 - Неявный возврат
 
 // // Change code below this line
 // const calculateTotalPrice = (quantity, pricePerItem) => {
@@ -345,7 +345,7 @@
 // console.log(calculateTotalPrice(4, 400));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 10 - Стрелочные функции как коллбеки
+// HW-4 - Task 10 - Стрелочные функции как коллбеки
 
 // // Change code below this line
 // function calculateTotalPrice(orderedItems) {
@@ -377,7 +377,7 @@
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 11 - Задача. Фильтрация массива чисел 2.0
+// HW-4 - Task 11 - Задача. Фильтрация массива чисел 2.0
 
 // Change code below this line
 // function filterArray(numbers, value) {
@@ -414,7 +414,7 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 12 - Задача. Общие элементы 2.0
+// HW-4 - Task 12 - Задача. Общие элементы 2.0
 
 // // Change code below this line
 // function getCommonElements(firstArray, secondArray) {
@@ -454,7 +454,7 @@
 // console.log(getCommonElements([1, 1, 1, 10, 20, 30], [1, 1, 2, 3]));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 13 - Чистые функции
+// HW-4 - Task 13 - Чистые функции
 
 // function changeEven(numbers, value) {
 //   // Change code below this line
@@ -489,7 +489,7 @@
 // console.log(changeEven([17, 24, 68, 31, 42], 100));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 14 - Метод map()
+// HW-4 - Task 14 - Метод map()
 
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 // // Change code below this line
@@ -498,7 +498,7 @@
 // console.log(planetsLengths);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 15 - Метод map() и массив объектов
+// HW-4 - Task 15 - Метод map() и массив объектов
 
 // const books = [
 //   {
@@ -531,7 +531,7 @@
 // console.log(ratings);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 16 - Метод flatMap()
+// HW-4 - Task 16 - Метод flatMap()
 
 // const books = [
 //   {
@@ -562,7 +562,7 @@
 // console.log(authors);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 17 - Задача. Имена пользователей
+// HW-4 - Task 17 - Задача. Имена пользователей
 
 // const users = [
 //   {
@@ -667,7 +667,7 @@
 // console.log(getUserNames(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 18 - Задача. Почты пользователей
+// HW-4 - Task 18 - Задача. Почты пользователей
 
 // const users = [
 //   {
@@ -797,7 +797,7 @@
 // console.log(getUserEmails(usersLight));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 19 - Методы filter и find
+// HW-4 - Task 19 - Методы filter и find
 
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // // Change code below this line
@@ -809,7 +809,7 @@
 // console.log(oddNumbers);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 20 - Фильтрация уникальных элементов
+// HW-4 - Task 20 - Фильтрация уникальных элементов
 
 // const books = [
 //   {
@@ -836,7 +836,7 @@
 // console.log(uniqueGenres);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 21 - Метод filter() и массив объектов
+// HW-4 - Task 21 - Метод filter() и массив объектов
 
 // const books = [
 //   {
@@ -869,7 +869,7 @@
 // console.log(booksByAuthor);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 22 - Задача. Пользователи с цветом глаз
+// HW-4 - Task 22 - Задача. Пользователи с цветом глаз
 
 // const users = [
 //     {
@@ -956,7 +956,7 @@
 // console.log("2nd log", getUsersWithEyeColor(users, color));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 23 - Задача. Пользователи в возрастной категории
+// HW-4 - Task 23 - Задача. Пользователи в возрастной категории
 
 // const users = [
 //     {
@@ -1046,7 +1046,7 @@
 // console.log(getUsersWithAge(users, 30, 40));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 24 - Задача. Пользователи с другом
+// HW-4 - Task 24 - Задача. Пользователи с другом
 
 // const users = [
 //   {
@@ -1138,7 +1138,7 @@
 // console.log(getUsersWithFriend(users, "Goldie Gentry"));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 25 - Задача. Список друзей
+// HW-4 - Task 25 - Задача. Список друзей
 
 // const users = [
 //   {
@@ -1231,7 +1231,7 @@
 // console.log(getFriends(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 26 - Задача. Активные пользователи
+// HW-4 - Task 26 - Задача. Активные пользователи
 
 // const users = [
 //   {
@@ -1318,7 +1318,7 @@
 // console.log(getActiveUsers(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 27 - Задача. Неактивные пользователи
+// HW-4 - Task 27 - Задача. Неактивные пользователи
 
 // const users = [
 //   {
@@ -1406,7 +1406,7 @@
 // console.log(getInactiveUsers(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 28 - Метод find()
+// HW-4 - Task 28 - Метод find()
 
 // const books = [
 //   {
@@ -1437,7 +1437,7 @@
 // console.log(bookByAuthor);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 29 - Задача. Пользователь с почтой
+// HW-4 - Task 29 - Задача. Пользователь с почтой
 
 // const users = [
 //     {
@@ -1518,7 +1518,7 @@
 // console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 30 - Метод every()
+// HW-4 - Task 30 - Метод every()
 
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
@@ -1544,7 +1544,7 @@
 // console.log(eachElementInThirdIsOdd);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 31 - Задача. Все ли пользователи активны
+// HW-4 - Task 31 - Задача. Все ли пользователи активны
 
 // const users = [
 //     {
@@ -1624,7 +1624,7 @@
 // console.log(isEveryUserActive(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 32 - Метод some()
+// HW-4 - Task 32 - Метод some()
 
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
@@ -1650,7 +1650,7 @@
 // console.log(anyElementInThirdIsOdd);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 33 - Задача. Есть ли активные пользователи
+// HW-4 - Task 33 - Задача. Есть ли активные пользователи
 
 // const users = [
 //     {
@@ -1730,7 +1730,7 @@
 // console.log(isAnyUserActive(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 34 - Метод reduce()
+// HW-4 - Task 34 - Метод reduce()
 
 // ------------------------------------------------------------------------
 
@@ -1773,7 +1773,7 @@
 // console.log('average play time', averagePlayTime);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 35 - Метод reduce() и массив объектов
+// HW-4 - Task 35 - Метод reduce() и массив объектов
 
 // const players = [
 //   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
@@ -1796,7 +1796,7 @@
 // console.log(totalAveragePlaytimePerGame);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 36 - Задача. Общий баланс пользователей
+// HW-4 - Task 36 - Задача. Общий баланс пользователей
 
 // const users = [
 //     {
@@ -1881,7 +1881,7 @@
 // console.log(calculateTotalBalance(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 37 - Задача. Общее количество друзей
+// HW-4 - Task 37 - Задача. Общее количество друзей
 
 // const users = [
 //     {
@@ -1967,7 +1967,7 @@
 // console.log(getTotalFriendCount(users));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 38 - Метод sort()
+// HW-4 - Task 38 - Метод sort()
 
 // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
 // const authors = [
@@ -1995,7 +1995,7 @@
 // console.log(ascendingNumbers);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 39 - Свой порядок сортировки чисел
+// HW-4 - Task 39 - Свой порядок сортировки чисел
 
 // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
 
@@ -2013,7 +2013,7 @@
 // console.log(numbers ,"-", ascendingNumbers, "-", [...numbers].sort((a, b) => b - a));
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 40 - Свой порядок сортировки строк
+// HW-4 - Task 40 - Свой порядок сортировки строк
 
 // const authors = [
 //   "Tanith Lee",
@@ -2032,33 +2032,571 @@
 // console.log(authorsInReversedOrder);
 
 // ------------------------------------------------------------------------
-// HW-5 - Task 41 - Сортировка объектов
+// HW-4 - Task 41 - Сортировка объектов
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    rating: 8.51,
-  },
-  {
-    title: "The Dream of a Ridiculous Man",
-    author: "Fyodor Dostoevsky",
-    rating: 7.75,
-  },
-  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
-];
-// Change code below this line
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
 
-const sortedByAuthorName = books;
+// const sortedByAuthorName = [...books].sort((firstObj, secondObj) => firstObj.author.localeCompare(secondObj.author));
 
-const sortedByReversedAuthorName = books;
+// const sortedByReversedAuthorName = [...books].sort((firstObj, secondObj) => secondObj.author.localeCompare(firstObj.author));
 
-const sortedByAscendingRating = books;
+// const sortedByAscendingRating = [...books].sort((firstObj, secondObj) => firstObj.rating - secondObj.rating);
 
-const sortedByDescentingRating = books;
+// const sortedByDescentingRating = [...books].sort((firstObj, secondObj) => secondObj.rating - firstObj.rating);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 42 - Задача. Сортировка по балансу
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+//     const balancedUsers = [...users].sort((userOne, userTwo) => userOne.balance - userTwo.balance);
+//     return balancedUsers;
+// };
+// // Change code above this line
+
+// console.log(sortByAscendingBalance(users));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 43 - Задача. Сортировка по количеству друзей
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+//     const descendingFriends = [...users].sort((userOne, userTwo) => userTwo.friends.length - userOne.friends.length);
+//     return descendingFriends;
+// };
+// // Change code above this line
+
+// console.log(sortByDescendingFriendCount(users));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 44 - Задача. Сортировка по имени
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const sortByName = users => {
+//     const newUsers = [...users].sort((userOne, userTwo) => userOne.name.localeCompare(userTwo.name));
+//     return newUsers;
+// };
+// // Change code above this line
+
+// console.log(sortByName(users));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 45 - Цепочки методов (чейнинг, chaining)
+// Дополни код так, чтобы в переменной names получился массив имён 
+// авторов в алфавитном порядке, рейтинг книг которых больше 
+// значения переменной MIN_BOOK_RATING.
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books]
+//     .filter(book => book.rating > MIN_BOOK_RATING)
+//     .sort((bookOne,bookTwo) => bookOne.author.localeCompare(bookTwo.author))
+//     .map(book => book.author);
+
+// console.log('names filteredMapedSorted', names);
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 46 - Задача. Пользователи и друзья
+// Дополни функцию getNamesSortedByFriendCount(users) так,
+//  чтобы она возвращала массив имён пользователей 
+// отсортированный по возрастанию количества 
+// их друзей(свойство friends).
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const getNamesSortedByFriendCount = users => {
+//     const newUsers = [...users]
+//         .sort((userOne, userTwo) => userOne.friends.length - userTwo.friends.length)
+//         .map(user => user.name);
+//     return newUsers;
+// };
+// // Change code above this line
+
+// console.log(getNamesSortedByFriendCount(users));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 47 - Задача. Имена друзей
+// Дополни функцию getSortedFriends(users) так,
+//  чтобы она возвращала массив уникальных имён 
+// друзей(свойство friends) отсортированный по алфавиту.
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const getSortedFriends = users => {
+//     const newUsers = [...users]
+//         .flatMap(user => user.friends)
+//         .filter((friends, index, array) => array.indexOf(friends) === index)
+//         .sort((userOne, userTwo) => userOne.localeCompare(userTwo));
+    
+//     // console.log([...users].flatMap(user => user.friends));
+//     return newUsers;
+// };
+//     // Change code above this line
+
+// console.log(getSortedFriends(users));
+
+// ------------------------------------------------------------------------
+// HW-4 - Task 48 - Задача. Общий баланс
+// Дополни функцию getTotalBalanceByGender(users, gender) так,
+//     чтобы она возвращала общий баланс пользователей
+//     (свойство balance), пол которых(свойство gender)
+//          совпадает со значением параметра gender.
+
+// const users = [
+//     {
+//         name: "Moore Hensley",
+//         email: "moorehensley@indexia.com",
+//         eyeColor: "blue",
+//         friends: ["Sharron Pace"],
+//         isActive: false,
+//         balance: 2811,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sharlene Bush",
+//         email: "sharlenebush@tubesys.com",
+//         eyeColor: "blue",
+//         friends: ["Briana Decker", "Sharron Pace"],
+//         isActive: true,
+//         balance: 3821,
+//         gender: "female"
+//     },
+//     {
+//         name: "Ross Vazquez",
+//         email: "rossvazquez@xinware.com",
+//         eyeColor: "green",
+//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//         isActive: false,
+//         balance: 3793,
+//         gender: "male"
+//     },
+//     {
+//         name: "Elma Head",
+//         email: "elmahead@omatom.com",
+//         eyeColor: "green",
+//         friends: ["Goldie Gentry", "Aisha Tran"],
+//         isActive: true,
+//         balance: 2278,
+//         gender: "female"
+//     },
+//     {
+//         name: "Carey Barr",
+//         email: "careybarr@nurali.com",
+//         eyeColor: "blue",
+//         friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//         isActive: true,
+//         balance: 3951,
+//         gender: "male"
+//     },
+//     {
+//         name: "Blackburn Dotson",
+//         email: "blackburndotson@furnigeer.com",
+//         eyeColor: "brown",
+//         friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//         isActive: false,
+//         balance: 1498,
+//         gender: "male"
+//     },
+//     {
+//         name: "Sheree Anthony",
+//         email: "shereeanthony@kog.com",
+//         eyeColor: "brown",
+//         friends: ["Goldie Gentry", "Briana Decker"],
+//         isActive: true,
+//         balance: 2764,
+//         gender: "female"
+//     }
+// ];
+
+// // Change code below this line
+// const getTotalBalanceByGender = (users, gender) => {
+    
+//     const newUsers = [...users]
+//         .filter(user => user.gender === gender)
+//         .map(user => user.balance)
+//         .reduce((previousValue, number) => {
+//         return previousValue + number;
+//         }, 0);
+    
+//     return newUsers;
+// };
+// // Change code above this line
+
+// console.log(getTotalBalanceByGender(users, "male"));
+// console.log(getTotalBalanceByGender(users, "female"));
