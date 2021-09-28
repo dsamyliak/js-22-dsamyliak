@@ -142,6 +142,7 @@ console.log('CW-5 Started;');
 // ------------------------------------------------------------------------
 // CW-5 - call and apply
 
+console.log(this);
 const call = a => {console.log(this);};
 console.log(this);
 
