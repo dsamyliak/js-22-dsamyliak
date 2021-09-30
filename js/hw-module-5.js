@@ -408,9 +408,8 @@ console.log('CW-5 Started;');
 //         this.items.push(newItem);
 //     }
 //     removeItem(itemToRemove) {
-        
-//         this.items.splice(this.items.indexOf(itemToRemove), 1);
-
+//         // this.items.splice(this.items.indexOf(itemToRemove), 1); - not recommend
+//         this.items = this.items.filter(item => item !== itemToRemove);
 //     }
 // };
 // // Change code above this line
