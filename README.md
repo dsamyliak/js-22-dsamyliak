@@ -1,2 +1,2 @@
-# js-22-dsamyliak
+# goit-js-hw-06
 My rep for learning js
