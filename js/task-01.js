@@ -10,8 +10,11 @@
 // console.log(obj["0"]);
 // console.log(obj[0]);
 // alert( obj["0"] + obj[0] );
+
 //---------------------
 // 01-query-selectors
+//---------------------
+
 // const magicBtn = document.querySelector('.js-magic-btn');
 // // console.log('magicBtn:', magicBtn);
 
@@ -25,3 +28,9 @@
 // const ulByIdCategories = document.querySelector('#categories');
 // console.log('ulByIdCategories:', ulByIdCategories);
 // });
+
+//---------------------
+// 02-properties
+//---------------------
+
+const magicBtn = document.querySelector('.js-magic-btn');
