@@ -100,18 +100,63 @@ document.querySelector('.img-js-this').childNodes[2].style['left'] = '300px';
 // 03-classlist
 //---------------------
 
-const magicBtn = document.querySelector('.js-magic-btn');
+// const magicBtn = document.querySelector('.js-magic-btn');
 
-magicBtn.addEventListener('click', () => {
-    const navEl = document.querySelector('.title-categorie');
-    console.log(navEl.classList);
-    navEl.classList.add('animals-class', 'first-class');   
-});
+// magicBtn.addEventListener('click', () => {
+//     const navEl = document.querySelector('.title-categorie');
+//     console.log(navEl.classList);
+//     navEl.classList.add('animals-class', 'first-class');   
+// });
 
-const removeBtn = document.querySelector('.remove-class');
+// const removeBtn = document.querySelector('.remove-class');
 
-removeBtn.addEventListener('click', () => {
-    const navEl = document.querySelector('.title-categorie');
-    console.log(navEl.classList);
-    navEl.classList.remove('first-class');
-});
+// removeBtn.addEventListener('click', () => {
+//     const navEl = document.querySelector('.title-categorie');
+//     console.log(navEl.classList);
+//     navEl.classList.remove('first-class');
+// });
+
+//---------------------
+// HW-6 Task 1
+//---------------------
+// const categoriesList = document.querySelector('ul#categories');
+// console.log('Number of categories:', categoriesList.children.length);
+// console.log('');
+// // console.log(categoriesList);
+// // console.log(categoriesList.innerHTML);
+// // console.log(categoriesList.children[0].querySelectorAll('li').length);
+
+// const h2arrayCategories = document.querySelectorAll('h2');
+// for (let index = 0; index < h2arrayCategories.length; index++) {
+//     console.log(`Category: ${h2arrayCategories[index].textContent}`);
+//     console.log(`Elements: ${categoriesList.children[index].querySelectorAll('li').length}`, );
+//     console.log("");
+// };
+
+//---------------------
+// 04-dom-traversal
+//---------------------
+
+// const animalsItems = document.querySelector('.animals-items');
+// console.log('Animals items:', animalsItems);
+// const animalsLiItemsQ = animalsItems.children.length;
+// console.log('Quantity of li in animals-items =', animalsLiItemsQ);
+
+// const productsItems = document.querySelector('.products-items');
+// console.log('Products items:', productsItems);
+// const productsLiItems = productsItems.children;
+// console.log('Li in products-items =', productsLiItems);
+// console.log('Quantity of li in productLiItems:', productsLiItems.length);
+
+// const technologiesLiItems = document.querySelector('.technologies-items').children;
+// console.log('Quantity of li in technologiesLiItems:', technologiesLiItems.length);
+
+// const elemParentNode = animalsItems.parentNode;
+// console.log('ParentNode => <li class="item">, this = <ul class="animals-items">', elemParentNode);
+
+// const elemChildNodes = animalsItems.childNodes;
+// console.log('Child Nodes of class="animals-items"', elemChildNodes);
+
+// const quantityLiItems = document.querySelectorAll('li');
+// console.log(quantityLiItems);
+
